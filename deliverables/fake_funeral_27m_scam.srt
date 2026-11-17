@@ -1,0 +1,303 @@
+1
+00:00:00,000 --> 00:00:03,314
+Someone rang the doorbell expecting a cash pickup.
+But
+
+2
+00:00:03,314 --> 00:00:06,627
+the house looked like a funeral. The “dead man”
+
+3
+00:00:06,627 --> 00:00:09,940
+was fictional. The grieving family were two
+YouTubers, waiting
+
+4
+00:00:09,940 --> 00:00:13,254
+with questions. In that Los Angeles sting, the
+visitor
+
+5
+00:00:13,254 --> 00:00:16,568
+was Jiandong Chen, later sentenced to six and a
+
+6
+00:00:16,568 --> 00:00:19,881
+half years in federal prison. The twist is bigger
+
+7
+00:00:19,881 --> 00:00:23,194
+than one awkward confrontation: prosecutors say the
+cash pickup
+
+8
+00:00:23,194 --> 00:00:26,508
+was one visible piece of a fraud network that
+
+9
+00:00:26,508 --> 00:00:29,822
+took more than twenty-seven million dollars from
+over two
+
+10
+00:00:29,822 --> 00:00:30,926
+thousand older Americans.
+
+11
+00:00:31,576 --> 00:00:34,890
+So how did a refund turn into a box
+
+12
+00:00:34,890 --> 00:00:35,626
+of cash?
+
+13
+00:00:36,276 --> 00:00:39,589
+Between 2021 and 2023, prosecutors say,
+victims—often in their
+
+14
+00:00:39,589 --> 00:00:42,903
+seventies and eighties—received unsolicited calls,
+emails or computer pop-ups.
+
+15
+00:00:42,903 --> 00:00:46,216
+The message might claim there was a problem with
+
+16
+00:00:46,216 --> 00:00:49,530
+tech support, a bank account, a government issue, or
+
+17
+00:00:49,530 --> 00:00:52,843
+a small retail charge. The goal was simple: get
+
+18
+00:00:52,843 --> 00:00:56,157
+the person to call a number controlled by the
+
+19
+00:00:56,157 --> 00:00:56,525
+scammers.
+
+20
+00:00:56,905 --> 00:01:00,359
+Then came the trust-building. Some victims were told
+they’d
+
+21
+00:01:00,359 --> 00:01:03,812
+receive a refund. A screen appeared to show money
+
+22
+00:01:03,812 --> 00:01:07,266
+sent back by mistake. The caller said: “You were
+
+23
+00:01:07,266 --> 00:01:10,720
+overpaid. Send the extra back.” But the supposed
+refund
+
+24
+00:01:10,720 --> 00:01:14,174
+was never real. The victims were being pushed to
+
+25
+00:01:14,174 --> 00:01:17,628
+send their own money—by wire or, sometimes, cash in
+
+26
+00:01:17,628 --> 00:01:18,395
+the mail.
+
+27
+00:01:19,045 --> 00:01:22,499
+That is where the story becomes a physical delivery
+
+28
+00:01:22,499 --> 00:01:25,953
+system. According to the Justice Department, victims
+were given
+
+29
+00:01:25,953 --> 00:01:29,406
+fake recipient names and addresses at retail
+locations that
+
+30
+00:01:29,406 --> 00:01:32,860
+accepted express packages. Chen admitted using fake
+IDs matching
+
+31
+00:01:32,860 --> 00:01:36,314
+those names to pick up packages of cash. Some
+
+32
+00:01:36,314 --> 00:01:39,768
+money was collected in person. Prosecutors say the
+broader
+
+33
+00:01:39,768 --> 00:01:43,221
+network also used remote desktop software to access
+computers,
+
+34
+00:01:43,221 --> 00:01:46,675
+and cryptocurrency to move proceeds to overseas
+associates and
+
+35
+00:01:46,675 --> 00:01:47,443
+pay co-conspirators.
+
+36
+00:01:47,823 --> 00:01:51,451
+The fake-funeral video captured one attempted
+pickup. Creators Ashton
+
+37
+00:01:51,451 --> 00:01:55,080
+Bingham and Art Kulik, from Trilogy Media,
+confronted Chen
+
+38
+00:01:55,080 --> 00:01:58,708
+at a home in the Los Angeles area. It
+
+39
+00:01:58,708 --> 00:02:02,337
+was a dramatic moment—but not the whole case, and
+
+40
+00:02:02,337 --> 00:02:05,966
+not proof by itself. The Justice Department says
+prosecutors
+
+41
+00:02:05,966 --> 00:02:09,594
+also reviewed videos of Chen collecting packages and
+counting
+
+42
+00:02:09,594 --> 00:02:13,223
+money. Their account traces his involvement from
+early 2023
+
+43
+00:02:13,223 --> 00:02:16,851
+through December of that year, including an
+attempted pickup
+
+44
+00:02:16,851 --> 00:02:19,674
+in Upland after an earlier local arrest.
+
+45
+00:02:20,324 --> 00:02:23,952
+In April 2026, Chen pleaded guilty. On November 13,
+
+46
+00:02:23,952 --> 00:02:27,581
+he was sentenced to 78 months—six and a half
+
+47
+00:02:27,581 --> 00:02:31,210
+years. He admitted that losses during his role in
+
+48
+00:02:31,210 --> 00:02:34,838
+the conspiracy exceeded nine and a half million
+dollars.
+
+49
+00:02:34,838 --> 00:02:38,467
+Investigators identified more than two thousand
+victims and losses
+
+50
+00:02:38,467 --> 00:02:41,289
+above twenty-seven million across the wider scheme.
+
+51
+00:02:41,939 --> 00:02:45,568
+That difference matters: the twenty-seven million
+describes the wider
+
+52
+00:02:45,568 --> 00:02:49,196
+operation; the nine-and-a-half-million figure is
+tied to Chen’s admitted
+
+53
+00:02:49,196 --> 00:02:52,825
+period of involvement. The judge said the harm was
+
+54
+00:02:52,825 --> 00:02:56,454
+more than money—victims also lost trust, dignity and
+peace
+
+55
+00:02:56,454 --> 00:02:57,260
+of mind.
+
+56
+00:02:57,640 --> 00:03:00,870
+The lesson is not “trust no one.” It’s: pause
+
+57
+00:03:00,870 --> 00:03:04,099
+when someone creates urgency around money. If a
+company
+
+58
+00:03:04,099 --> 00:03:07,329
+says you’ve been over-refunded, hang up and contact
+it
+
+59
+00:03:07,329 --> 00:03:10,559
+using a number from its official website or your
+
+60
+00:03:10,559 --> 00:03:13,788
+card. Never mail cash to fix a computer or
+
+61
+00:03:13,788 --> 00:03:17,018
+return a surprise refund. Don’t give a caller remote
+
+62
+00:03:17,018 --> 00:03:20,248
+access to your device. And tell someone you trust
+
+63
+00:03:20,248 --> 00:03:22,042
+before moving a large amount.
+
+64
+00:03:22,692 --> 00:03:25,921
+A viral sting can make one face recognizable. But
+
+65
+00:03:25,921 --> 00:03:29,151
+the evidence—victim accounts, records, investigators
+and court proceedings—shows the
+
+66
+00:03:29,151 --> 00:03:32,381
+system behind it. The most important question isn’t
+how
+
+67
+00:03:32,381 --> 00:03:35,610
+clever the scam sounded. It’s whether the target
+gets
+
+68
+00:03:35,610 --> 00:03:38,840
+a chance to stop, verify, and ask for help.
+

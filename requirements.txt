@@ -1,0 +1,8 @@
+# Runtime dependencies for 2d-animation-long-form-aivxer
+numpy
+scipy
+soundfile
+skia-python
+sherpa-onnx
+imageio-ffmpeg
+Pillow
