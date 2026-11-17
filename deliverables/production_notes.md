@@ -4,7 +4,9 @@
 
 - 16:9, 1280×720, 24 fps; approximately 3:39.
 - English narration generated with one consistent selected narrator voice.
-- Original vector-like 2D illustrations are drawn by `create_video.py` with Pillow; generic round-head puppets are not likenesses of real people.
+- `create_video.py` draws 25 distinct shots across night street, funeral room, senior's home, scam call center, parcel counter, map, evidence wall, courthouse, and warm home settings.
+- Original round-head puppets have scene-specific expressions, blinks, mouth movement, idle bob, walking, and gestures; they are not likenesses of real people.
+- Kinetic elements include type-on headings/captions, counters, moving parcel/route graphics, progress bars, sliding evidence cards, gavel hit, drawn marker circles, camera push, and wipe transitions.
 - The background score is synthesized in code; no source music or stock footage is used.
 - Fonts are included with their licenses in `fonts/` so the renderer is self-contained.
 - Sidecar captions: `fake_funeral_27m_scam.srt` (timings are estimated from paragraph and speech-chunk durations).

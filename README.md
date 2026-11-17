@@ -15,7 +15,7 @@ ln -sf "$(.venv/bin/python -c 'import imageio_ffmpeg; print(imageio_ffmpeg.get_f
 export PATH="$PWD/.venv/bin:$PATH"
 ```
 
-Running the **original archived example** additionally needs an OS EGL runtime (such as `libegl1` on Debian/Ubuntu), FFmpeg with H.264 support, and the Kokoro TTS / Parakeet ASR model archives; its scripts use fixed `/home/claude/...` paths. A separate Pillow-based code renderer was used to create the video in `deliverables/` without those unavailable model/system dependencies.
+Running the **original archived example** additionally needs an OS EGL runtime (such as `libegl1` on Debian/Ubuntu), FFmpeg with H.264 support, and the Kokoro TTS / Parakeet ASR model archives; its scripts use fixed `/home/claude/...` paths. A separate Pillow-based code renderer creates the 25-shot version in `deliverables/`, with distinct locations, animated puppet expressions and gestures, kinetic text, animated case graphics, and wipe transitions—without those unavailable model/system dependencies.
 
 Re-render the delivered Pillow version (the generated voice clips are already in `deliverables/`) with:
 

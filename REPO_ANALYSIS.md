@@ -16,7 +16,7 @@ The skill describes a procedural 2D explainer-video pipeline: Kokoro TTS through
 
 ## Original skill pipeline blockers and completed video
 
-The archived example's **original Skia + Sherpa-ONNX pipeline remains unavailable** in this environment, but a complete video was produced using a code-based Pillow renderer, the selected English voice, and FFmpeg. The generated MP4 is `deliverables/fake_funeral_27m_scam.mp4` (1280×720, 24 fps, 3:38.84), with a separate SRT and reproducible drawing/encoding script.
+The archived example's **original Skia + Sherpa-ONNX pipeline remains unavailable** in this environment, but a complete video was produced using a code-based Pillow renderer, the selected English voice, and FFmpeg. The revised MP4 is `deliverables/fake_funeral_27m_scam.mp4` (1280×720, 24 fps, 3:38.84), with 25 location-specific shots, expression/gesture animation, kinetic text and animated case graphics, plus a separate SRT and reproducible drawing/encoding script.
 
 The original skill-specific limitations are:
 
