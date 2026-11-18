@@ -16,7 +16,7 @@ INK='#18161B'; CREAM='#FFF6DC'; GOLD='#F2C14E'; RED='#C8242C'; LIME='#B8F04A'; N
 FONT='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 FONT_REG='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
 
-TIMES=[(0,9,'porch','porch'),(9,19,'funeral','funeral'),(19,27,'funeral','close_chen'),(27,35,'table','losses'),(35,38,'card','card1'),(38,49,'victim_home','victim'),(49,59,'boiler_room','caller'),(59,71,'table','refund'),(71,80,'victim_home','victim_close'),(80,83,'card','card2'),(83,94,'table','parcel'),(94,104,'parcel_counter','id_pickup'),(104,115,'table','map'),(115,118,'card','card3'),(118,130,'funeral','sting'),(130,141,'table','evidence'),(141,152,'courthouse','courthouse'),(152,155,'card','card4'),(155,167,'courtroom','court'),(167,177,'table','ledger'),(177,188,'victim_home','hangup'),(188,197,'victim_home','help'),(197,205,'porch','polaroid'),(205,209,'card','end')]
+TIMES=[(0,9,'porch','porch'),(9,19,'funeral','funeral'),(19,27,'funeral','close_chen'),(27,35,'table','losses'),(35,38,'card','card1'),(38,49,'victim_home','victim'),(49,59,'boiler_room','caller'),(59,71,'table','refund'),(71,80,'victim_home','victim_close'),(80,83,'card','card2'),(83,94,'delivery_loading','parcel'),(94,104,'parcel_counter','id_pickup'),(104,115,'table','map'),(115,118,'card','card3'),(118,130,'funeral','sting'),(130,141,'evidence_room','evidence'),(141,152,'courthouse','courthouse'),(152,155,'card','card4'),(155,167,'courtroom','court'),(167,177,'table','ledger'),(177,188,'victim_home','hangup'),(188,197,'victim_home','help'),(197,205,'porch','polaroid'),(205,209,'card','end')]
 SHOTS=[dict(i=i+1,start=a,end=b,set=s,kind=k,card=s=='card',whip_in=i in (0,2,5,7,10,12,14,16,18,20,22),whip_out=i in (1,3,6,8,11,13,15,17,19,21,23)) for i,(a,b,s,k) in enumerate(TIMES)]
 
 CAST={
@@ -184,10 +184,31 @@ def set_base(kind):
   d.rectangle((287,237,673,367),fill='#67413B',outline=INK,width=7);d.rectangle((255,356,705,420),fill='#815543',outline=INK,width=6)
   d.ellipse((426,56,534,164),fill='#59433B',outline=GOLD,width=5);text(d,(480,110),'UNITED STATES',9,CREAM)
   d.line((480,157,480,207),fill=GOLD,width=4);d.line((411,169,549,169),fill=GOLD,width=4);d.arc((390,164,438,198),0,180,fill=GOLD,width=3);d.arc((522,164,570,198),0,180,fill=GOLD,width=3)
+ elif kind=='delivery_loading':
+  d.rectangle((0,0,W,H),fill='#27323A');d.rectangle((0,42,W,400),fill='#3B474B')
+  for x in range(34,960,155):
+   d.line((x,42,x,398),fill='#2A3538',width=6);d.line((x+6,50,x+6,396),fill='#596367',width=2)
+  d.rectangle((120,90,820,322),fill='#1B252B',outline=INK,width=7);d.rectangle((140,106,800,300),fill='#172A35',outline='#6B7774',width=4)
+  for x in range(168,780,84):d.line((x,109,x,298),fill='#273D46',width=2)
+  d.rectangle((0,391,W,450),fill='#66472F',outline=INK,width=6)
+  for x in (55,332,608,816):
+   d.rectangle((x,282,x+130,385),fill='#845B3B',outline=INK,width=5);d.line((x+8,302,x+122,302),fill='#BF9566',width=3);d.line((x+66,284,x+66,383),fill='#493322',width=3)
+  d.rectangle((680,62,904,126),fill='#263E44',outline=INK,width=4);text(d,(792,94),'NIGHT DISPATCH',16,CREAM)
+ elif kind=='evidence_room':
+  d.rectangle((0,0,W,H),fill='#3D4747');d.rectangle((0,390,W,H),fill='#3A2D25')
+  for x in range(32,960,92):d.line((x,0,x,393),fill='#35403F',width=2)
+  # three corkboards with maps, photographs and typed filings
+  for x in (58,354,650):
+   d.rectangle((x,62,x+250,342),fill='#76563C',outline=INK,width=7);d.rectangle((x+10,73,x+240,332),fill='#B49A70')
+   for j in range(6):d.line((x+22,105+j*32,x+223-(j%2)*25,105+j*32),fill='#75644D',width=2)
+   d.rectangle((x+23,88,x+108,144),fill='#EEE3CE',outline=INK,width=2);d.rectangle((x+128,175,x+220,242),fill='#D9CEB9',outline=INK,width=2)
+   d.line((x+95,146,x+139,179),fill=RED,width=3);d.line((x+145,237,x+196,152),fill=RED,width=3)
+  d.rectangle((0,392,W,452),fill='#6F4B32',outline=INK,width=5)
+  for x in (150,470,790):d.rectangle((x,451,x+44,540),fill='#463021',outline=INK,width=3)
  return im
 
 # Practical pools, additive amber/cyan glows and restrained vignette.
-RIGS={'porch':[(720,145,95,'#FFD98A',.24),(570,300,90,'#FFE6B0',.10)],'funeral':[(480,105,115,'#FFD98A',.20),(230,285,90,'#FFE6B0',.10),(790,280,90,'#FFE6B0',.10)],'victim_home':[(320,250,120,'#FFD98A',.13),(760,160,105,'#8FC8EE',.12)],'boiler_room':[(180,180,100,'#8FC8EE',.11),(480,180,100,'#8FC8EE',.11),(790,180,100,'#C8242C',.08)],'table':[(480,175,220,'#FFD98A',.16)],'parcel_counter':[(220,160,120,'#FFD98A',.11),(740,150,120,'#8FC8EE',.12)],'courthouse':[(480,180,170,'#FFD98A',.11)],'courtroom':[(480,160,150,'#FFF0C0',.15)]}
+RIGS={'porch':[(720,145,95,'#FFD98A',.24),(570,300,90,'#FFE6B0',.10)],'funeral':[(480,105,115,'#FFD98A',.20),(230,285,90,'#FFE6B0',.10),(790,280,90,'#FFE6B0',.10)],'victim_home':[(320,250,120,'#FFD98A',.13),(760,160,105,'#8FC8EE',.12)],'boiler_room':[(180,180,100,'#8FC8EE',.11),(480,180,100,'#8FC8EE',.11),(790,180,100,'#C8242C',.08)],'table':[(480,175,220,'#FFD98A',.16)],'parcel_counter':[(220,160,120,'#FFD98A',.11),(740,150,120,'#8FC8EE',.12)],'courthouse':[(480,180,170,'#FFD98A',.11)],'courtroom':[(480,160,150,'#FFF0C0',.15)],'delivery_loading':[(230,100,120,'#FFD98A',.13),(800,130,140,'#8FC8EE',.12)],'evidence_room':[(480,90,170,'#FFF0C0',.12),(830,330,110,'#C8242C',.06)]}
 
 def lit(im,scene):
  # Darkness wash; practical glows are built in RGBA then correctly composited on black.
@@ -221,7 +242,7 @@ def draw_props(im,shot,local):
   d.polygon([(350,421),(393,407),(393,444),(350,456)],fill='#9C6844',outline=INK)
   text(d,(351,434),'CASH',10,CREAM)
  elif k in ('close_chen','id_pickup'):
-  if k=='close_chen':outlined_label(im,'CAUGHT ON CAMERA',690,130,27,'#E45050',-8)
+  if k=='close_chen':pass
   else:
    box(d,(558,346,871,485),'#DDD6C3',INK,4,6);text(d,(715,369),'DRIVER LICENSE',16,INK);d.ellipse((582,383,642,443),fill='#BD916B',outline=INK,width=3);text(d,(747,449),'FALSE ID',19,RED)
  elif k=='losses':
@@ -238,7 +259,7 @@ def draw_props(im,shot,local):
  elif k=='victim':
   # The alert stays inside the physical CRT glass.
   text(d,(380,267),'SECURITY ALERT',15,RED,stroke=1);text(d,(380,292),'CALL SUPPORT NOW',13,CREAM,stroke=1)
-  outlined_label(im,'UNKNOWN CALLER',740,112,20,GOLD,-3)
+  # animated caller tag is added by the per-frame renderer
  elif k=='caller':
   outlined_label(im,'SCRIPT',169,107,22,CREAM);outlined_label(im,'TRUST',811,107,22,CREAM)
  elif k=='parcel':
@@ -257,16 +278,18 @@ def draw_props(im,shot,local):
   for j,(x,title) in enumerate(((93,'PICKUP LOGS'),(343,'VIDEO STILLS'),(595,'COURT FILINGS'))):
    d.polygon([(x,94),(x+224,103),(x+212,391),(x-6,383)],fill='#EEE3CE',outline=INK);text(d,(x+108,133),title,17,INK)
    for z in range(5):d.line((x+21,178+z*32,x+193-(z%2)*24,178+z*32),fill='#A4977E',width=2)
-  outlined_label(im,'DOJ RECORD',717,432,18,RED,-5)
+  # The animated DOJ stamp is added by the frame renderer.
  elif k=='courthouse':
-  outlined_label(im,'COURT RECORD',740,150,26,RED,-7)
+  # The animated court-record stamp is added by the frame renderer.
+  pass
  elif k=='court':
-  outlined_label(im,'78 MONTHS',715,158,25,RED,-5)
+  # Sentence stamp arrives on the gavel strike in the frame renderer.
+  pass
  elif k=='ledger':
   d.polygon([(110,82),(852,91),(827,423),(121,416)],fill='#F3E8D0',outline=INK);text(d,(480,127),'SENTENCING DOSSIER',22,INK)
   for j,(a,b) in enumerate((('WIDER SCHEME','$27M+'),('CHEN ROLE','$9.5M+'))):
    y=215+j*83;d.line((208,y+26,758,y+26),fill='#A79A7F',width=2);text(d,(304,y),a,20,INK);text(d,(670,y),b,28,RED)
-  outlined_label(im,'78 MONTHS',482,385,23,RED)
+  # Animated sentence stamp is placed on the dossier during the shot.
  elif k=='hangup':
   d.arc((107,280,183,348),190,350,fill=INK,width=7);text(d,(728,400),'HANG UP - VERIFY',18,INK)
  elif k=='help':
@@ -342,8 +365,8 @@ NARR_LINES={
  'narr_a':[(1,"Los Angeles, July 2023. A man arrives for a cash pickup at a funeral. The casket is part of a set. The dead man is a prop."),(2,"The collector doesn't know he has walked into a sting. The visitors are Ashton Bingham and Art Kulik, from Trilogy Media. They ask one question: who sent you?"),(3,"The clip went viral. But one confrontation is only a glimpse of a wider fraud case."),(4,"Investigators described thousands of older victims, fake refund stories, cash pickups and money moved overseas. Across the wider scheme, losses topped twenty-seven million dollars."),(6,"This film separates that total from the losses Jiandong Chen admitted during his own role. First, the bait. Some victims saw a computer alert, received a call, or were told a bank refund had gone wrong."),(7,"The caller sounded helpful. The pressure came next.")],
  'narr_b1':[(11,"Scammers sometimes used remote access and invented an overpayment. Victims were told to send their own money back, by wire or in bulk cash."),(12,"Many were directed to mail cash to a retail address under a fictitious name. Chen admitted using false identification to retrieve packages."),(13,"Prosecutors also described cryptocurrency transfers to overseas co-conspirators, and trips to collect packages in places including Nevada."),(15,"The fake funeral pickup was not the whole case."),(16,"Other videos, records and testimony showed a broader pattern."),(17,"The investigation continued beyond that viral moment, with pickups traced through December twenty twenty-three, including an attempted collection in Upland.")],
  'narr_b2':[(18,"Chen pleaded guilty in April 2026."),(19,"On November thirteenth, he was sentenced to seventy-eight months in federal prison."),(20,"He admitted losses during his role exceeded nine and a half million dollars. That is not the same figure as the wider scheme's losses, which exceeded twenty-seven million."),(21,"Scams like these also take trust, dignity and peace of mind. If a caller creates urgency around money, pause. Hang up, then find the organization's official number yourself."),(22,"Never mail cash to fix a computer or return a surprise refund. Don't grant remote access to an unexpected caller. Before sending a large payment, talk with someone you trust."),(23,"The sting put one collector on camera. The court record showed a wider system."),(24,"Pause first. Verify always.")]}
-MANIFEST=[('narr_a','cinema_narr_a.wav','NARR',NARR_LINES['narr_a']),('narr_b1','cinema_narr_b1.wav','NARR',NARR_LINES['narr_b1']),('narr_b2','cinema_narr_b2.wav','NARR',NARR_LINES['narr_b2']),('caller','cinema_caller.wav','CALL',[(7,"Ma'am, I can help you check that charge. I'll guide you through a refund."),(8,'The screen shows too much. Please send the extra back.')]),('victim','cinema_victim.wav','VICT',[(8,'I thought it was real. What do I do?')]),('host','cinema_host.wav','HOST1',[(2,'Come in. Meet Uncle Mortimer.'),(15,'Who sent you for this cash?')]),('mule','cinema_mule.wav','MULE',[(2,"I'm here to collect a package."),(15,'I was told to pick it up.')]),('judge','cinema_judge.wav','JUDG',[(19,'The harm goes beyond money. It touches trust, dignity, and peace of mind.')])]
-OFFSETS={('MULE',2):.38,('HOST1',2):3.12,('CALL',7):4.05,('CALL',8):3.30,('VICT',8):6.50,('HOST1',15):6.20,('MULE',15):8.25,('JUDG',19):5.15}
+MANIFEST=[('narr_a','cinema_narr_a.wav','NARR',NARR_LINES['narr_a']),('narr_b1','cinema_narr_b1.wav','NARR',NARR_LINES['narr_b1']),('narr_b2','cinema_narr_b2.wav','NARR',NARR_LINES['narr_b2']),('caller','cinema_caller.wav','CALL',[(7,"Ma'am, I can help you check that charge. I'll guide you through a refund."),(8,'The screen shows too much. Please send the extra back.')]),('victim','cinema_victim.wav','VICT',[(8,'I thought it was real. What do I do?')]),('host','cinema_host.wav','HOST1',[(15,'Come in. Meet Uncle Mortimer. Who sent you for this cash?')]),('mule','cinema_mule.wav','MULE',[(15,"I'm here to collect a package. I was told to pick it up.")]),('judge','cinema_judge.wav','JUDG',[(19,'The harm goes beyond money. It touches trust, dignity, and peace of mind.')])]
+OFFSETS={('CALL',7):4.05,('CALL',8):3.30,('VICT',8):7.20,('HOST1',15):4.50,('MULE',15):9.00,('JUDG',19):5.15}
 
 def build_voice_events():
  events=[];activity=np.zeros(209*SR,dtype=np.float32)
@@ -355,6 +378,7 @@ def build_voice_events():
   for (shotnum,txt),wt in zip(rows,weights):
    span=speechdur*wt/tot;seg=audio[int(cursor*SR):min(len(audio),int((cursor+span)*SR))];cursor+=span+gap
    shot=SHOTS[shotnum-1];start=shot['start']+OFFSETS.get((speaker,shotnum),.28);maxdur=shot['end']-start-.06
+   if speaker in ('HOST1','MULE') and shotnum==15:maxdur=shot['end']-start-.10
    if len(seg)/SR>maxdur:
     n=max(1,int(maxdur*SR));seg=np.interp(np.linspace(0,len(seg)-1,n),np.arange(len(seg)),seg).astype(np.float32)
    if not len(seg):continue
@@ -370,18 +394,54 @@ def build_voice_events():
  return events,activity
 
 def audio_fx():
- n=209*SR;fx=np.zeros(n,dtype=np.float32);rng=np.random.default_rng(8)
- def add(x,t,g):
-  a=int(t*SR);b=min(n,a+len(x));
-  if b>a:fx[a:b]+=x[:b-a]*g
- def tone(f,dur,a,dec=4):
-  t=np.arange(int(dur*SR),dtype=np.float32)/SR;return (np.sin(2*np.pi*f*t)*np.exp(-dec*t)*a).astype(np.float32)
- for s in SHOTS:
-  if s['card']:add(tone(36,1.15,.75,2.3),s['start'],.8)
-  if s['whip_in'] or s['whip_out']:
-   count=int(.38*SR);noise=rng.standard_normal(count).astype(np.float32);noise=np.r_[0,np.diff(noise)];env=np.sin(np.linspace(0,math.pi,count))**2;add(noise*env*.08,max(0,s['start']-.17),.35)
- for t in (5.8,32.5,63.2,87.3,97.1,135.4,162.8,171.5,197.4):add(tone(180,.18,.20,9),t,.6)
- add(tone(660,.32,.27,2.4),5.8,.9);add(tone(880,.42,.18,3.2),5.8,.7)
+ n=209*SR;fx=np.zeros(n,dtype=np.float32);rng=np.random.default_rng(2026)
+ def add(wave,t,g=1.0):
+  i=int(t*SR);j=min(n,i+len(wave))
+  if j>i:fx[i:j]+=wave[:j-i]*g
+ def tone(freq,dur,amp,decay=4,drop=0):
+  tt=np.arange(max(1,int(dur*SR)),dtype=np.float32)/SR
+  hz=freq*(1-drop*np.minimum(1,tt/max(dur,.001)))
+  return (np.sin(2*np.pi*hz*tt)*np.exp(-decay*tt)*amp).astype(np.float32)
+ def noise_hit(dur=.22,amp=.25,tail=12):
+  n0=max(1,int(dur*SR));z=rng.standard_normal(n0).astype(np.float32)
+  z=np.r_[0,np.diff(z)].astype(np.float32);env=np.exp(-np.linspace(0,tail,dur and n0,dtype=np.float32)/max(tail,1))
+  return z*env*amp
+ def whoosh(dur=.52):
+  n0=int(dur*SR);z=rng.standard_normal(n0).astype(np.float32);z=np.r_[0,np.diff(z)].astype(np.float32)
+  env=np.sin(np.linspace(0,np.pi,n0,dtype=np.float32))**2
+  return z*env*.22
+ def thud(dur=.62,wood=False):
+  sub=tone(58 if not wood else 92,dur,.52 if not wood else .32,5.5,.20)
+  atk=noise_hit(.09,.34 if wood else .24,10)
+  return np.pad(sub,(0,max(0,len(atk)-len(sub))))+np.pad(atk,(0,max(0,len(sub)-len(atk))))
+ def paper(dur=.66):
+  n0=int(dur*SR);z=rng.standard_normal(n0).astype(np.float32);z=np.r_[0,np.diff(z)].astype(np.float32)
+  env=np.maximum(0,np.sin(np.linspace(0,np.pi,n0,dtype=np.float32)))**.7
+  return z*env*.075
+ def phone_ring(dur=1.1):
+  tt=np.arange(int(dur*SR),dtype=np.float32)/SR;gate=(np.sin(2*np.pi*2.1*tt)>.15).astype(np.float32)
+  return (gate*(.19*np.sin(2*np.pi*930*tt)+.12*np.sin(2*np.pi*1175*tt))*np.exp(-tt*.25)).astype(np.float32)
+ # Quiet door chime, approaching steps and phone alert.
+ for freq,amp,at in ((659,.26,5.65),(880,.18,5.79)):add(tone(freq,.75,amp,2.6),at)
+ for at in (.65,1.35,2.08,141.5,142.2,142.9):add(thud(.22,True),at,.27)
+ add(phone_ring(),39.8,.62);add(phone_ring(.72),178.3,.30)
+ # Mute score on cards, but leave each sculpted low-frequency chapter impact.
+ for shot in SHOTS:
+  if shot['card']:
+   add(tone(36,1.28,.82,2.15,.08),shot['start'],.92)
+   add(thud(.72,False),shot['start']+.015,.62)
+  if shot['whip_in']:add(whoosh(.42),max(0,shot['start']-.22),.55)
+  if shot['whip_out']:add(whoosh(.46),shot['end']-.34,.52)
+ # Paper slides, package taps, ink stamps, gavel and instant-camera shutter.
+ for at in (61.8,83.15,86.7,130.2,135.1,168.0):add(paper(.5),at,.75)
+ for at in (87.1,96.8,97.2):add(thud(.42,True),at,.55)
+ for at in (32.5,63.4,97.0,135.4,143.3,162.8,171.5,197.4):
+  add(thud(.48,True),at,.50);add(tone(740,.13,.09,11),at+.03,.60)
+ add(noise_hit(.06,.55,24),200.4,.75);add(whoosh(.18),200.32,.28)
+ # Short resonant room tail is tucked behind the direct Foley.
+ dry=fx.copy()
+ for delay,gain in ((.075,.15),(.145,.08),(.24,.035)):
+  off=int(delay*SR);fx[off:]+=dry[:-off]*gain
  return fx
 
 def score(length=209):
@@ -459,4 +519,6 @@ def main():
  rc=proc.wait()
  if rc:raise SystemExit(rc)
  print(f'Wrote {out}: 1920x1080, 30 fps, 209 s')
-if __name__=='__main__':main()
+if __name__=='__main__':
+ from animated_renderer import main as animated_main
+ animated_main()

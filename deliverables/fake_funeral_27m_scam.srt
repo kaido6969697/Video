@@ -7,101 +7,94 @@ Los Angeles, July 2023. A man arrives for a cash pickup at a funeral. The casket
 The collector doesn't know he has walked into a sting. The visitors are Ashton Bingham and Art Kulik, from Trilogy Media. They ask one question: who sent you?
 
 3
-00:00:09,380 --> 00:00:10,676
-I'm here to collect a package.
-
-4
-00:00:12,120 --> 00:00:13,890
-Come in. Meet Uncle Mortimer.
-
-5
 00:00:19,280 --> 00:00:25,580
 The clip went viral. But one confrontation is only a glimpse of a wider fraud case.
 
-6
+4
 00:00:27,280 --> 00:00:34,940
 Investigators described thousands of older victims, fake refund stories, cash pickups and money moved overseas. Across the wider scheme, losses topped twenty-seven million dollars.
 
-7
+5
 00:00:38,280 --> 00:00:48,940
 This film separates that total from the losses Jiandong Chen admitted during his own role. First, the bait. Some victims saw a computer alert, received a call, or were told a bank refund had gone wrong.
 
-8
+6
 00:00:49,280 --> 00:00:52,430
 The caller sounded helpful. The pressure came next.
 
-9
+7
 00:00:53,050 --> 00:00:58,090
 Ma'am, I can help you check that charge. I'll guide you through a refund.
 
-10
+8
 00:01:02,300 --> 00:01:05,900
 The screen shows too much. Please send the extra back.
 
-11
-00:01:05,500 --> 00:01:09,250
+9
+00:01:06,200 --> 00:01:09,950
 I thought it was real. What do I do?
 
-12
+10
 00:01:23,280 --> 00:01:33,709
 Scammers sometimes used remote access and invented an overpayment. Victims were told to send their own money back, by wire or in bulk cash.
 
-13
+11
 00:01:34,280 --> 00:01:43,840
 Many were directed to mail cash to a retail address under a fictitious name. Chen admitted using false identification to retrieve packages.
 
-14
+12
 00:01:44,280 --> 00:01:51,667
 Prosecutors also described cryptocurrency transfers to overseas co-conspirators, and trips to collect packages in places including Nevada.
 
-15
+13
 00:01:58,280 --> 00:02:02,191
 The fake funeral pickup was not the whole case.
 
+14
+00:02:02,500 --> 00:02:06,633
+Come in. Meet Uncle Mortimer. Who sent you for this cash?
+
+15
+00:02:07,000 --> 00:02:09,900
+I'm here to collect a package. I was told to pick it up.
+
 16
-00:02:04,200 --> 00:02:06,324
-Who sent you for this cash?
-
-17
-00:02:06,250 --> 00:02:07,762
-I was told to pick it up.
-
-18
 00:02:10,280 --> 00:02:14,191
 Other videos, records and testimony showed a broader pattern.
 
-19
+17
 00:02:21,280 --> 00:02:29,971
 The investigation continued beyond that viral moment, with pickups traced through December twenty twenty-three, including an attempted collection in Upland.
 
-20
+18
 00:02:32,280 --> 00:02:34,682
 Chen pleaded guilty in April 2026.
 
-21
+19
 00:02:35,280 --> 00:02:40,083
 On November thirteenth, he was sentenced to seventy-eight months in federal prison.
 
-22
+20
 00:02:40,150 --> 00:02:46,071
 The harm goes beyond money. It touches trust, dignity, and peace of mind.
 
-23
+21
 00:02:47,280 --> 00:02:56,940
 He admitted losses during his role exceeded nine and a half million dollars. That is not the same figure as the wider scheme's losses, which exceeded twenty-seven million.
 
-24
+22
 00:02:57,280 --> 00:03:07,940
 Scams like these also take trust, dignity and peace of mind. If a caller creates urgency around money, pause. Hang up, then find the organization's official number yourself.
 
-25
+23
 00:03:08,280 --> 00:03:16,940
 Never mail cash to fix a computer or return a surprise refund. Don't grant remote access to an unexpected caller. Before sending a large payment, talk with someone you trust.
 
-26
+24
 00:03:17,280 --> 00:03:22,884
 The sting put one collector on camera. The court record showed a wider system.
 
-27
+25
 00:03:25,280 --> 00:03:26,881
 Pause first. Verify always.
+
