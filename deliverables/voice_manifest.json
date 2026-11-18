@@ -1,0 +1,177 @@
+{
+  "sample_rate": 48000,
+  "groups": [
+    {
+      "key": "narr_a",
+      "speaker": "NARR",
+      "voice_id": "voice-06",
+      "file": "cinema_narr_a.wav",
+      "lines": [
+        {
+          "shot": 1,
+          "text": "Los Angeles, July 2023. A man arrives for a cash pickup at a funeral. The casket is part of a set. The dead man is a prop."
+        },
+        {
+          "shot": 2,
+          "text": "The collector doesn't know he has walked into a sting. The visitors are Ashton Bingham and Art Kulik, from Trilogy Media. They ask one question: who sent you?"
+        },
+        {
+          "shot": 3,
+          "text": "The clip went viral. But one confrontation is only a glimpse of a wider fraud case."
+        },
+        {
+          "shot": 4,
+          "text": "Investigators described thousands of older victims, fake refund stories, cash pickups and money moved overseas. Across the wider scheme, losses topped twenty-seven million dollars."
+        },
+        {
+          "shot": 6,
+          "text": "This film separates that total from the losses Jiandong Chen admitted during his own role. First, the bait. Some victims saw a computer alert, received a call, or were told a bank refund had gone wrong."
+        },
+        {
+          "shot": 7,
+          "text": "The caller sounded helpful. The pressure came next."
+        }
+      ]
+    },
+    {
+      "key": "narr_b1",
+      "speaker": "NARR",
+      "voice_id": "voice-06",
+      "file": "cinema_narr_b1.wav",
+      "lines": [
+        {
+          "shot": 11,
+          "text": "Scammers sometimes used remote access and invented an overpayment. Victims were told to send their own money back, by wire or in bulk cash."
+        },
+        {
+          "shot": 12,
+          "text": "Many were directed to mail cash to a retail address under a fictitious name. Chen admitted using false identification to retrieve packages."
+        },
+        {
+          "shot": 13,
+          "text": "Prosecutors also described cryptocurrency transfers to overseas co-conspirators, and trips to collect packages in places including Nevada."
+        },
+        {
+          "shot": 15,
+          "text": "The fake funeral pickup was not the whole case."
+        },
+        {
+          "shot": 16,
+          "text": "Other videos, records and testimony showed a broader pattern."
+        },
+        {
+          "shot": 17,
+          "text": "The investigation continued beyond that viral moment, with pickups traced through December twenty twenty-three, including an attempted collection in Upland."
+        }
+      ]
+    },
+    {
+      "key": "narr_b2",
+      "speaker": "NARR",
+      "voice_id": "voice-06",
+      "file": "cinema_narr_b2.wav",
+      "lines": [
+        {
+          "shot": 18,
+          "text": "Chen pleaded guilty in April 2026."
+        },
+        {
+          "shot": 19,
+          "text": "On November thirteenth, he was sentenced to seventy-eight months in federal prison."
+        },
+        {
+          "shot": 20,
+          "text": "He admitted losses during his role exceeded nine and a half million dollars. That is not the same figure as the wider scheme's losses, which exceeded twenty-seven million."
+        },
+        {
+          "shot": 21,
+          "text": "Scams like these also take trust, dignity and peace of mind. If a caller creates urgency around money, pause. Hang up, then find the organization's official number yourself."
+        },
+        {
+          "shot": 22,
+          "text": "Never mail cash to fix a computer or return a surprise refund. Don't grant remote access to an unexpected caller. Before sending a large payment, talk with someone you trust."
+        },
+        {
+          "shot": 23,
+          "text": "The sting put one collector on camera. The court record showed a wider system."
+        },
+        {
+          "shot": 24,
+          "text": "Pause first. Verify always."
+        }
+      ]
+    },
+    {
+      "key": "caller",
+      "speaker": "CALL",
+      "voice_id": "voice-07",
+      "file": "cinema_caller.wav",
+      "lines": [
+        {
+          "shot": 7,
+          "text": "Ma'am, I can help you check that charge. I'll guide you through a refund."
+        },
+        {
+          "shot": 8,
+          "text": "The screen shows too much. Please send the extra back."
+        }
+      ]
+    },
+    {
+      "key": "victim",
+      "speaker": "VICT",
+      "voice_id": "voice-08",
+      "file": "cinema_victim.wav",
+      "lines": [
+        {
+          "shot": 8,
+          "text": "I thought it was real. What do I do?"
+        }
+      ]
+    },
+    {
+      "key": "host",
+      "speaker": "HOST1",
+      "voice_id": "voice-09",
+      "file": "cinema_host.wav",
+      "lines": [
+        {
+          "shot": 2,
+          "text": "Come in. Meet Uncle Mortimer."
+        },
+        {
+          "shot": 15,
+          "text": "Who sent you for this cash?"
+        }
+      ]
+    },
+    {
+      "key": "mule",
+      "speaker": "MULE",
+      "voice_id": "voice-10",
+      "file": "cinema_mule.wav",
+      "lines": [
+        {
+          "shot": 2,
+          "text": "I'm here to collect a package."
+        },
+        {
+          "shot": 15,
+          "text": "I was told to pick it up."
+        }
+      ]
+    },
+    {
+      "key": "judge",
+      "speaker": "JUDG",
+      "voice_id": "voice-11",
+      "file": "cinema_judge.wav",
+      "lines": [
+        {
+          "shot": 19,
+          "text": "The harm goes beyond money. It touches trust, dignity, and peace of mind."
+        }
+      ]
+    }
+  ]
+}
